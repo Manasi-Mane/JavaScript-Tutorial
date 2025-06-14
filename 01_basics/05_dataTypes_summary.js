@@ -10,10 +10,10 @@ let userEmail;
 
 const id =  Symbol('123')
 const anotherId = Symbol('123')
-console.log(id==anotherId);
+// console.log(id==anotherId);
 
 const bigNumber = 7276215587267356487898767677878n
-console.log(typeof bigNumber);
+// console.log(typeof bigNumber);
 
 //Referenced (Non Primitive)
 // Arrays, Objects, Functions
@@ -28,4 +28,30 @@ const myFunction = function(){
     console.log("Hello World");   
 }
 
-console.log(typeof myObj);  // function object
+// console.log(typeof myObj);  // function object
+
+
+//---------------------------------------------------------
+
+//Stack memory- primitive, Heap Memory-non primitive
+
+let myYoutubename="manasimane.com"
+
+let anothername=myYoutubename
+anothername="chaiaurcode"
+
+console.log(anothername);
+console.log(myYoutubename);
+
+let userOne ={
+    email:"user@google.com",
+    upi:"user@ybl"
+}
+
+let userTwo=userOne
+
+userTwo.email="manasi@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
